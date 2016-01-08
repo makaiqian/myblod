@@ -38,7 +38,6 @@
 		}
 		getThreads();
 		
-		
 	}
 	getComments();
 		
