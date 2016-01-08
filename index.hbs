@@ -9,15 +9,27 @@
             <a class="menu-button icon-menu" href="#"><span class="word">留言板</span></a>
         {{/if}}
     </nav>
-    <div class="vertical">
+
+    <div>
         <div class="main-header-content inner">
             <h1 class="page-title">{{@blog.title}}</h1>
             <h2 class="page-description">{{@blog.description}}</h2>
         </div>
     </div>
     <a class="scroll-down icon-arrow-left" href="#content" data-offset="-45"><span class="hidden">下拉显示</span></a>
+    <ul class="visitor-container">
+        <li class="visitor-list visitor-title">最近来访</li>
+    </ul>
+    <script type="text/tmpl" class="tmpl-visitor-list">
+        <li class="visitor-list">
+            <a class="visitor-link" href="{url}">
+                <img src="{avatar_url}" class="visitor-img">
+                <span class="visitor-name">{name}</span>
+            </a>
+        </li>
+    </script>
 </header>
-
+    
 {{! The main content area on the homepage }}
 <main id="content" class="content" role="main">
 

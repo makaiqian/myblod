@@ -1,0 +1,69 @@
+.no-cover.main-header {
+	min-height: 360px;
+	padding: 60px 0;
+}
+/* 最近访客 */
+.visitor-container {
+	margin: 0;
+	padding: 0;
+	position: absolute;
+	bottom: 40px;
+	left: 0;
+	padding-top: 20px;
+	width: 100%;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+	background-color: rgba(255,255,255,0.6);
+}
+
+.visitor-list {
+	list-style: none;
+	display: inline-block;
+	width: 40px;
+	height: 60px;
+	text-align: center;
+	margin: 5px;
+	position: relative;
+}
+.visitor-title {
+	width: 100px;
+	height: 30px;
+	vertical-align: top;
+	margin-top: 12px;
+}
+.visitor-link {
+	width: 100%;
+	height: 100%;
+	display: block;
+	text-decoration: none;
+}
+.visitor-img {
+	background-color: #ccc;
+	width: 100%;
+	height: 40px;
+	-webkit-border-radius: 50%;
+	border-radius: 50%;
+}
+.visitor-name {
+	color: #666;
+	opacity: 0;
+	position: absolute;
+	width: 100%;
+	height: 20px;
+	line-height: 20px;
+	display: block;
+	left: 0;
+	bottom: 0;
+	font-size: 12px;
+	text-shadow: 0 0 2px rgba(0,0,0,0.6);
+	overflow: hidden;
+}
+.visitor-list:hover .visitor-img {
+	transform: rotate(360deg);
+	/*transition: transform 0.6s;*/
+}
+.visitor-list:hover .visitor-name {
+	opacity: 1;
+	-webkit-transition: opacity 0.6s;
+	transition: opacity 0.6s;
+}
