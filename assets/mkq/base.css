@@ -7,8 +7,8 @@
 	margin: 0;
 	padding: 0;
 	position: absolute;
-	bottom: 60px;
-	max-height: 80px;
+	bottom: 0;
+	max-height: 90px;
 	overflow: hidden;
 	left: 0;
 	padding-top: 20px;
